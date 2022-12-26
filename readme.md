@@ -1,11 +1,11 @@
-#Leveraging Word2vec for Text Classification
+# Leveraging Word2vec for Text Classification
 
 Many machine learning algorithms requires the input features to be represented as a fixed-length feature vector. When it comes to texts, one of the most common fixed-length features is one hot encoding methods such as bag of words or tf-idf. The advantage of these approach is that they have fast execution time, while the main drawback is they lose the ordering & semantics of the words.
 
 The motivation behind converting text into semantic vectors (such as the ones provided by Word2Vec) is that not only do these type of methods have the capabilities to extract the semantic relationships (e.g. the word powerful should be closely related to strong as oppose to another word like bank), but they should be preserve most of the relevant information about a text while having relatively low dimensionality.
 
 
-#Gensim Implementation
+# Gensim Implementation
 
 After feeding the Word2Vec algorithm with our corpus, it will learn a vector representation for each word. This by itself, however, is still not enough to be used as features for text classification as each record in our data is a document not a word.
 
